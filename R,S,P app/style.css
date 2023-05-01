@@ -1,0 +1,62 @@
+:root {
+    --aqua: #00FFD1;
+    --blue: #31C6D4;
+    --yellow: #FFFF00;
+    --red: #FF1E1E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bruno Ace', cursive;
+    background-color: var(--aqua);
+}
+
+h1 {
+    margin: 2rem 0;
+    color: var(--red);
+}
+
+h2 {
+    margin: 2rem 0;
+    color: var(--aqua);
+    -webkit-text-stroke: .5px black; 
+}
+
+span {
+    color: var(--red);
+}
+
+button {
+    margin: 0 .625rem;
+    border: none;
+    border-radius: 16px;
+    color: transparent;
+    padding: 0.625rem 0 0.625rem 2.5rem;
+    background-color: var(--yellow);
+    box-shadow:  5px 5px var(--red);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+button img {
+    width: 75px;
+}
+
+.game {
+    border-radius: 25px;
+    padding: 2rem;
+    background-color: var(--blue);
+}

@@ -38,25 +38,25 @@ function computerTurn() {
 
 function gameResult() {
     if (computer === player) {//info is SAVED IN COMPUTER && PLAYER && RESULT!!!!!1!!1
-        result = 'Its a tie!';
+        result = 'Its a tie! 👔';
     }
     if (computer === 'Paper' && player === 'Rock') {
-        result = "You Lose!";
+        result = "You Lose! 💔";
     }
     if (computer === 'Rock' && player === 'Paper') {
-        result = "You Win!";
+        result = "🎉You Win!🎉";
     }
     if (computer === 'Scissors' && player === 'Paper') {
-        result = "You Lose!";
+        result = "You Lose! 💔";
     }
     if (computer === 'Paper' && player === 'Scissors') {
-        result = "You Win!";
+        result = "🎉You Win!🎉";
     }
     if (computer === 'Scissors' && player === 'Rock') {
-        result = "You Win!";
+        result = "🎉You Win!🎉";
     }
     if (computer === 'Rock' && player === 'Scissors') {
-        result = "You Lose!";
+        result = "You Lose! 💔";
     }
 
     resultText.innerHTML = result;
