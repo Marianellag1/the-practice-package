@@ -1,0 +1,93 @@
+:root {
+    --Blue: #4C5FD5;
+    --Gray: #dadbf1;
+    --Black: #000000;
+    --White: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--Black);
+    color: var(--White);
+    display: flex;
+}
+
+.btn {
+    padding: .625rem;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.submit {
+    border: solid 1px;
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit a {
+    color: var(--White);
+    font-weight: 100;
+}
+
+.sign-in {
+    list-style: none;
+    background-color: var(--Blue);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sign-in a {
+    color: var(--White);
+    font-weight: 100;
+}
+
+section {
+    background-color: var(--Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+section input {
+    width: 75%;
+    padding: .625rem;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: var(--Black);
+    color: var(--White);
+    padding: 3rem 4rem;
+}
+
+.end a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 100;
+}
+
+.end li {
+    list-style-type: none;
+    margin: .35rem 0;
+}
