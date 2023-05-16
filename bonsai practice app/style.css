@@ -1,0 +1,46 @@
+:root {
+    --green: #00b289;
+    --black-gray:#4c4d5f;
+    --white: #fff;
+    --orangey-yellow: #f8db62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 25px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1rem 3rem;
+}
+
+.nav-words {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.nav-link {
+    padding: 0 1rem;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.product-review {
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.nav-btn {
+    padding: .25rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+}

@@ -30,6 +30,11 @@ header h4 {
     font-weight: 300;
 }
 
+.help-center {
+    display: grid;
+    grid-template-columns: 7% 30%;
+}
+
 nav {
     display: flex;
     justify-content: end;
@@ -83,9 +88,11 @@ h2 {
 }
 
 section input {
-    width: 55%;
-    padding: .625rem;
+    width: 50%;
+    padding: 1.5rem;
     margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 section input:hover {
@@ -93,17 +100,21 @@ section input:hover {
 }
 
 .choices {
-    padding: 5rem 8rem;
+    padding: 7rem 8rem;
     display: grid;
     grid-template-columns: auto auto;
 }
 
 .choice-name {
     padding: 0 2rem ;
+    display: grid;
+    grid-template-columns: 70px 350px;
+    margin: 2rem 0;
 }
 
 .choice-name p {
     padding: .625rem 0; 
+    font-size: 20px;
 }
 
 .choice-name li {
@@ -116,9 +127,17 @@ section input:hover {
     color: var(--Blue);
 }
 
+.choice-icon {
+    width: 50px;
+}
+
 .arrow {
     width: 15px;
     padding-left: .25rem;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 footer {
@@ -126,7 +145,7 @@ footer {
     color: var(--White);
     padding: 3rem 4rem;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .end a {
@@ -142,4 +161,10 @@ footer {
 
 .company h5 {
     padding: 1.5rem 0 .35rem 0;
+}
+
+.abstract-shape {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
