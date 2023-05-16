@@ -19,40 +19,53 @@ body {
 header {
     background-color: var(--Black);
     color: var(--White);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+}
+
+header h4 {
     display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
 }
 
 .btn {
     padding: .625rem;
     cursor: pointer;
+    margin: 0 .55rem;
+    width: fit-content;
 }
 
-.btn a {
-    text-decoration: none;
-}
 
 .submit {
-    border: solid 1px;
-    list-style: none;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.submit a {
+    border: solid var(--White) 1px;
+    background-color: var(--Black);
     color: var(--White);
-    font-weight: 100;
+    border-radius: 5px;
+    /* text-align: center; */
 }
 
 .sign-in {
     list-style: none;
     background-color: var(--Blue);
     border-radius: 5px;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.sign-in a {
+.sign-in:hover {
+    background-color: var(--White);
+    color: var(--Blue);
+}
+
+.sign-in {
     color: var(--White);
-    font-weight: 100;
+    font-weight: 300;
 }
 
 section {
@@ -61,24 +74,59 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 10rem 0;
 }
 
 h2 {
-    font-size: 45px;
-    font-weight: 300;
+    font-size: 75px;
+    font-weight: 500;
 }
 
 section input {
-    width: 75%;
+    width: 55%;
     padding: .625rem;
     margin-top: 1rem;
+}
+
+section input:hover {
+    border-color: var(--Blue);
+}
+
+.choices {
+    padding: 5rem 8rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.choice-name {
+    padding: 0 2rem ;
+}
+
+.choice-name p {
+    padding: .625rem 0; 
+}
+
+.choice-name li {
+    list-style-type: none;
+    padding: .35rem 0;
+}
+
+.choice-name a {
+    text-decoration: none;
+    color: var(--Blue);
+}
+
+.arrow {
+    width: 15px;
+    padding-left: .25rem;
 }
 
 footer {
     background-color: var(--Black);
     color: var(--White);
     padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .end a {
@@ -89,5 +137,9 @@ footer {
 
 .end li {
     list-style-type: none;
-    margin: .35rem 0;
+    padding: .40rem 0;
+}
+
+.company h5 {
+    padding: 1.5rem 0 .35rem 0;
 }
