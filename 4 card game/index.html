@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>4 Card Game</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <h1>Find the Match</h1>
-        <div class="box">
-            <div class="images">
+        <header>
+            <h1>Find the Match</h1>
+        </header>
+        <div class="image-show">
+            <div class="box">
+                <div class="images">
+                    <div class="top show">
+                        <img src="./img/panda.jpg" alt="panda">
+                        <img src="./img/bear.jpg" alt="bear">
+                    </div>
+
+                    <div class="bottom show">
+                        <img src="./img/bear.jpg" alt="bear">
+                        <img src="./img/panda.jpg" alt="panda">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-no-show">
+        <div class="images">
+            <div class="top no-show">
+                <img src="./img/questionmark.jpg" alt="question mark">
+                <img src="./img/questionmark.jpg" alt="question mark">
+            </div>
+
+            <div class="bottom no-show">
+                <img src="./img/questionmark.jpg" alt="question mark">
+                <img src="./img/questionmark.jpg" alt="question mark">
             </div>
         </div>
     </div>
 </body>
+
 </html>
