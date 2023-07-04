@@ -1,3 +1,8 @@
+:root {
+    --black: black;
+    --coral: #ecd5c7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +14,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--coral);
 }
 
 h1 {
     text-align: center;
+    font-size: 45px;
 }
 
 img {
@@ -20,6 +27,7 @@ img {
     width: 300px;
     cursor: pointer;
     border: solid 3px black;
+    border-radius: 10px;
 }
 
 .show img,
