@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Open Sesame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -13,10 +18,18 @@
         </header>
         <div class="box">
             <div class="box-header">
-                h
+                <h2>New Password:</h2>
+            </div>
+            <div class="box-body">
+                <textarea readonly id="password" placeholder="Generate password"
+                    aria-label="Generated Password"></textarea>
+            </div>
+            <div class="card-footer">
+                <button id="generate" class="btn">Generate Password</button>
             </div>
         </div>
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
