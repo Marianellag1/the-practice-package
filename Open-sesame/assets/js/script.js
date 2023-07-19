@@ -73,6 +73,7 @@ function generatePassword() {
         //repeats once more the question
         alert("Password length must be between 8-30 characters. Please try again.")
         generatePassword();
+        //return; //to stop this execution aka Recurssion(?)
     }
 }
 
