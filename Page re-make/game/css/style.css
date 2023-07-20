@@ -6,6 +6,11 @@
 
 body {
     min-height: 100vh;
+    background-color: lightgray;
+}
+
+h2 {
+    text-align: center;
 }
 
 .container {
@@ -14,3 +19,83 @@ body {
     /* justify-content: center; */
     align-items: center;
 }
+
+.navbar {
+  background-color: black;
+}
+
+a.nav-link {
+    color: white;
+    padding: .625rem;
+}
+
+input.form-control.me-2 {
+    background-color: black;
+    padding: 0 2rem;
+}
+
+button.btn.btn-outline-success {
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+.collection {
+    margin: 4rem 0;
+}
+
+.collection-card {
+    margin-top: 3rem;
+}
+
+.card-games {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.assassins {
+    height: 206px;
+}
+
+.online-games-card {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.online-card {
+    height: 500px;
+    width: 400px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.online-btn {
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    background: none;
+    padding: .25rem;
+}
+
+.online-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.img-search {
+    display: flex;
+    grid-template-columns: auto auto;
+}
+
+textarea {
+    height: 84px;
+
+}
+
+form.row.g-3 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
