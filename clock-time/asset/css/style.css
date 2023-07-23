@@ -1,0 +1,36 @@
+:root {
+    --light-pink: #FBA1B7;
+    --coral: #FFD1DA;
+    --very-light-pink: #FFF0F5;
+    --sand: #FFDBAA;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-pink);
+}
+
+.clock-box {
+    background-color: var(--coral);
+    padding: 2rem;
+    border: 5px var(--black);
+    border-radius: 16px;
+    border-style: inset;
+}
+
+.clock {
+    font-family: 'Tektur', cursive;
+    font-size: 70px;
+}
