@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
     <div class="container">
+        <div class="date-box">
+            <div class="date" id="today"></div>
+        </div>
         <div class="box">
-            <div class="clock-box">
-                <div class="clock" id="display-clock">
+            <div class="clock-box space">
+                <div class="clock timer" id="display-clock">
+                </div>
+            </div>
+            <div class="little-notes space">
+                <div class="note">
+                    <h2>Notes</h2>
+                    <textarea placeholder="type something..." cols="30" rows="10"></textarea>
+                    <input class="note-btn" type="button" value="submit">
                 </div>
             </div>
         </div>
+
     </div>
     <script src="./asset/js/script.js"></script>
 </body>
 
 </html>
+
+<!-- https://quotesondesign.com/api/ api under clock -->
