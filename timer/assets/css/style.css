@@ -1,0 +1,40 @@
+/* :root {
+    --:;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+button {
+    margin: 2rem .5rem;
+    cursor: pointer;
+    padding: .625rem;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+button:hover {
+    text-decoration-line: underline;
+    -webkit-text-stroke: medium;
+    font-size: 27px;
+}
