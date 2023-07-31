@@ -1,6 +1,33 @@
 // console.log("hello world");// works
 let clock = document.getElementById("display-clock");
+//from bootcamp
+let typefaceEl = document.querySelector("#typeface");
+let clearBtn = document.querySelector("#clear");
+let textArea = document.querySelector("#textarea");
+let typeface;
 
+//change event
+typefaceEl.addEventListener("change", function (e) {
+    e.preventDefault();
+    typeface = typefaceEl.value; //capture value = options
+    document.querySelector('.note').style.fontFamily = typeface; //makes notes change font, but not actual textarea
+})
+
+
+//maybe no on this one
+// textArea.addEventListener("keydown", function(e) { //when key is pressed
+//     let key = e.key.toLowerCase();
+//     let alphabetNumChar = "abcdefghijklmnopqrstuvwxyz0123456789".split("");
+
+// })
+
+//clear all in textarea
+clearBtn.addEventListener("click", function(e) {
+    e.preventDefault(); //prevent from reloading or anything weird happening.
+    textArea.value = '';
+})
+
+//current date
 const currentDate = new Date();
 console.log(currentDate);
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

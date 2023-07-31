@@ -24,7 +24,27 @@
             <div class="little-notes space">
                 <div class="note">
                     <h2>Notes</h2>
-                    <textarea placeholder="type something..." cols="30" rows="10"></textarea>
+                    <form class="options">
+                        <!-- taken from bootcamp -->
+                        <select id="typeface"> 
+                            <option value="fangsong">
+                                <h3>fangsong</h3>
+                            </option>
+                            <option value="cursive">
+                                <h3>cursive</h3>
+                            </option>
+                            <option value="inherit">
+                                <h3>inherit</h3>
+                            </option>
+                            <option value="unset">
+                                <h3>unset</h3>
+                            </option>
+                        </select>
+                    </form>
+                    <textarea id="textarea" placeholder="type something..." cols="30" rows="10"></textarea>
+                    <div>
+                        <button id="clear">Clear</button>
+                    </div>
                     <input class="note-btn" type="button" value="submit">
                 </div>
             </div>
