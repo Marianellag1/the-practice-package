@@ -84,6 +84,15 @@ body {
     flex-direction: column;
 }
 
+.options {
+    margin: 0 0 .625rem 0;
+}
+
+#typeface {
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+
 h2 {
     padding-bottom: 1rem;
 }
@@ -91,9 +100,11 @@ h2 {
 textarea {
     padding: .45rem;
     font-size: 15px;
+    height: 90px;
 }
 
-.note-btn {
+.note-btn,
+.clear-btn {
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
     font-size: 20px;
@@ -107,8 +118,14 @@ textarea {
     cursor: pointer;
 }
 
-.note-btn:hover {
+.note-btn:hover,
+.clear-btn:hover {
     background-color: var(--light-pink);
+}
+
+.response-text {
+    display: flex;
+    flex-direction: column;
 }
 
 /*  unset, fangsong, cursive, inherit*/
