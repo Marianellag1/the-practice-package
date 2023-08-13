@@ -61,12 +61,15 @@ function renderToDos() {
        let li = document.createElement("li");
        li.textContent = todo; //li will be created from user input
        li.setAttribute("data-index", i);//takes two argu. 
+       li.setAttribute("class", "text");
 
-       let btn = document.createElement("button");
-       btn.textContent = "complete";
+       let 
+       removeBtn = document.createElement("button");
+       removeBtn.textContent = "Remove Task";
 
-       li.appendChild(btn);//show on page
+       li.appendChild(removeBtn);//show on page
        toDoList.appendChild(li);
+
     
     }
 }
@@ -94,10 +97,14 @@ toDoList.addEventListener("click", function(e) {
     if (element.matches("button") === true) {
         let index = element.parentElement.getAttribute("data-index");//from render todos
         todos.splice(index, 1); //get that element and splice it
-
+        
         savedToDos();
         renderToDos();
     }
+    
+    if (element.matches("li") === true) {
+        e.target.style.setProperty("text-decoration", "line-through");//when user clicks li, line through
+    } 
 })
 
 setInterval(displayClock, 1000);

@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="first-box">
-
+        <div class="first-box square">
             <div id="date"></div>
             <div id="time"></div>
-            <header>My Notes</header>
+        </div>
+
+        <div class="second-box square">
+
+            <h3>My Notes</h3>
             <div class="container">
                 <div class="notes">
                     <form id="todo-form" method="POST">
@@ -25,8 +31,8 @@
                     <p>Total To-Do count: <span id="todo-count">0</span></p>
                     <ul id="todo-list"></ul> <!-- from javascript -->
                 </div>
-
             </div>
+
         </div>
     </div>
     <!-- <footer>Made by Mua</footer> -->

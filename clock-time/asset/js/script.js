@@ -56,12 +56,12 @@ function displayClock() {
     clock.innerHTML = `${hours}:${minutes}:${seconds} ${meridiem}`
 }
 
-function showNotes(e) {
+function showNotes() {
     // console.log(e);
     // e.preventDefault();
-    let response = textArea.value;//capture the value of user input
-    console.log(response);
-    submissionResponseEl.textContent = response; //display the value
+    let text = textArea.value;//capture the value of user input
+    console.log(text);
+    submissionResponseEl.textContent = text; //display the value
 }
 
 //clear all in textarea
@@ -73,7 +73,7 @@ clearBtn.addEventListener("click", function(e) {
 setInterval(displayClock, 1000);
 displayClock();
 
-submitEl.addEventListener("click", function() {
+submitEl.addEventListener("submit", function() {
     optionsForm.style.display = "none"; //no show
     textArea.style.display = "none";
     clearBtn.style.display = "none";
