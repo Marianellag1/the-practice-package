@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="first-card box">
+            <h3>To-Do Dropdown List</h3>
+        </div>
+        <form>
+            <ul>
+                <li>
+                    <label for="name">Task Name:</label>
+                    <select id="task-name">
+                        <option value="car">Car related</option>
+                        <option value="grocery">Grocery</option>
+                        <option value="study">Study</option>
+                        <option value="work">Work</option>
+                        <option value="home">Home Renovation</option>
+                    </select>
+                    <label for="time">How fast should it be completed:</label>
+                    <select id="when">
+                        <option value="asap">ASAP</option>
+                        <option value="wait">Can Wait (month)</option>
+                        <option value="soon">Should be done soon (couple days)</option>
+                        <option value="later">Can be done later (within the week)</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="msg">Comment:</label>
+                    <textarea id="msg" name="comments" placeholder="task details..."></textarea>
+                </li>
+            </ul>
+            <button id="save">SAVE</button>
+        </form>
+        <div class="second-card box">
+            <h3>Last To-Do</h3>
+            <p>Task Name: <span id="saved-task"></span></p>
+            <p>How fast it was completed: <span id="saved-time"></span></p>
+            <p>Comment: <span id="saved-msg"></span></p>
+        </div>
+    </div>
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,9 @@ let submissionResponseEl = document.querySelector("#response");
 let clearBtn = document.querySelector("#clear");
 let optionsForm = document.querySelector("#optionsform");
 let backBtn = document.getElementById("backbtn");
+
+let show = localStorage.getItem("show");
+submissionResponseEl.textContent = show;
 // let typefaceEl = document.querySelector("#typeface");
 // let element = h1El;
 // let typeface;
@@ -75,7 +78,10 @@ submitEl.addEventListener("click", function() {
     textArea.style.display = "none";
     clearBtn.style.display = "none";
     submitEl.style.display = "none";
+    submissionResponseEl.textContent = show;
+    localStorage.setItem("show", show);
     showNotes();
+
     // console.log(showNotes);
 });
 

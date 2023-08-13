@@ -1,5 +1,9 @@
 var calBtn = document.getElementById("cal");
-var displayTotal = document.getElementById("display")
+var displayTotal = document.getElementById("display");
+
+var count = localStorage.getItem("count");
+
+displayTotal.textContent = count;
 
 var arr = [3, 1, 5, 6];
 
@@ -7,6 +11,7 @@ calBtn.addEventListener("click", function() { //when btn is clicked, then total 
     displayTotal.textContent = "total: " + sumOfArr(arr)
     // console.log("total", sumOfArr(arr));
     console.log("total", sumOfArr([3, 4, 5, 8]));
+    localStorage.setItem("count", count);
 })
 
 function sumOfArr(arr) {//equation for arr to be added 

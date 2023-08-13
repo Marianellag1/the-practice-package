@@ -11,18 +11,22 @@
 
 <body>
     <div class="wrapper">
-        <span id="date"></span>
-        <header>My Notes</header>
-        <div class="container">
-            <div class="notes">
-                <textarea id="add-note" cols="30" rows="10"></textarea>
-                <div class="btn">
-                    <button id="add">Add Note</button>
-                    <button id="delete-all">Delete All Notes</button>
-                </div>
-                <ul class="notes"></ul>
-            </div>
+        <div class="first-box">
 
+            <div id="date"></div>
+            <div id="time"></div>
+            <header>My Notes</header>
+            <div class="container">
+                <div class="notes">
+                    <form id="todo-form" method="POST">
+                        <label for="todo-text">Add ToDo: </label>
+                        <input type="text" placeholder="Write to do..." name="todo-text" id="todo-text">
+                    </form>
+                    <p>Total To-Do count: <span id="todo-count">0</span></p>
+                    <ul id="todo-list"></ul> <!-- from javascript -->
+                </div>
+
+            </div>
         </div>
     </div>
     <!-- <footer>Made by Mua</footer> -->
